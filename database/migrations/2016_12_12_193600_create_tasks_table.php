@@ -27,7 +27,7 @@ class CreateTasksTable extends Migration
      $table->string('title');
      $table->string('date');
      $table->longText('notes')->nullable();
-     $table->timestamps();
+
 
 
      # FYI: We're skipping the 'tags' field for now; more on that later.
