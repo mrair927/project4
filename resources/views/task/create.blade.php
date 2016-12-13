@@ -11,7 +11,7 @@
 
     <form method='POST' action='/tasks'>
 
-        {{ csrf_field() }}
+        {{ csrf_token() }}
 
         <div class='form-group'>
            <label>Title</label>
