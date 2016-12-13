@@ -25,7 +25,6 @@ class CreateTasksTable extends Migration
 
      # The rest of the fields...
      $table->string('title');
-     $table->string('date');
      $table->longText('notes')->nullable();
 
 
