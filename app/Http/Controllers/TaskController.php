@@ -2,10 +2,10 @@
 namespace Project4\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\Task;
 use Session;
 use DB;
 use Carbon;
+use App\Task;
 
 class TaskController extends Controller
 {
@@ -52,7 +52,7 @@ public function store(Request $request)
     # Get the data from the form
     #$title = $_POST['title']; # Option 1) Old way, don't do this.
     $title = $request->input('title'); # Option 2) USE THIS ONE! :)
-    $task = new task();
+    $task = new Task();
     $task->title = $request->input('title');
     $task->user_id = $request->user()->id;
     $task->save();
@@ -63,13 +63,13 @@ public function store(Request $request)
 
 public function show($id)
 {
-    $book = Book::find($id);
-    if(is_null($book)) {
-        Session::flash('message','Book not found');
-        return redirect('/books');
+    $task = Task::find($id);
+    if(is_null($task)) {
+        Session::flash('message','task not found');
+        return redirect('/tasks');
     }
-    return view('book.show')->with([
-        'book' => $book,
+    return view('task.show')->with([
+        'task' => $task,
     ]);
 }
 }
