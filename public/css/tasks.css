@@ -45,17 +45,19 @@ html {
 }
 body {
     margin:0 0 100px; /* bottom = footer height */
+    background-color: #ccdee2;
 }
 
-footer {
-    position: absolute;
-    left:0;
-    bottom:0;
-    height:30px;
-    width:100%;
-    background-color:#ccc;
-    text-align:center;
-    padding:5px;
+h1 {
+
+}
+
+h2 {
+
+}
+
+h4 {
+
 }
 /* End Sticky Footer */
 
@@ -141,5 +143,5 @@ input[type=text],input[type=password],select {
     position:fixed;
     top:0;
     left:0;
-    background-color:yellow;
+    background-color:#42d4f4;
 }
