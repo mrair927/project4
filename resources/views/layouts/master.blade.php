@@ -14,7 +14,7 @@
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' rel='stylesheet'>
     <link href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/lumen/bootstrap.min.css' rel='stylesheet'>
 
-    <link href='/css/foobooks.css' type='text/css' rel='stylesheet'>
+    <link href='/css/tasks.css' type='text/css' rel='stylesheet'>
 
     {{-- Yield any page specific CSS files or anything else you might want in the <head> --}}
     @yield('head')
@@ -29,7 +29,7 @@
     <header>
         <a href='/'>
             <img
-            src='http://making-the-internet.s3.amazonaws.com/laravel-foobooks-logo@2x.png'
+            src='https://lh5.ggpht.com/BggKi4WCYbq-VuWBK4U96scwxa2rNTiAe1amDkYTJcMLaPPJ2PHhJItWwSGwVhbjMw1c=w300'
             alt='Foobooks Logo'
             class='logo'>
         </a>
@@ -38,8 +38,9 @@
     <nav>
         <ul>
             @if(Auth::check())
-                <li><a href='/'>Home</a></li>
-                <li><a href='/tasks/create'>Add a task</a></li>
+                <li><a href='/tasks'>All The Tasks</a></li>
+                <li><a href='/tasks/create'>Add a Task</a></li>
+                <li><a href='/tasks/completed'>View Completed Tasks</a></li>
                 <li><a href='/logout'>Log out</a></li>
             @else
                 <li><a href='/'>Home</a></li>

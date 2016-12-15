@@ -1,7 +1,12 @@
 @extends('layouts.master')
 
-@section('title', 'Welcome to My Great Task Manager')
+@section('title')
+    Welcome to Foobooks
+@endsection
 
 @section('content')
-  Welcome to My Great Task Manager!
+    <p>
+        Welcome to My Great Task Manager!
+        To get started <a href='/login'>log in</a> or <a href='/register'>register</a>.
+    </p>
 @endsection

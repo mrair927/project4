@@ -6,11 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateTasksTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
       Schema::create('tasks', function (Blueprint $table) {
@@ -25,11 +21,9 @@ class CreateTasksTable extends Migration
 
      # The rest of the fields...
      $table->string('title');
-     $table->longText('notes')->nullable();
-
-
-
-     # FYI: We're skipping the 'tags' field for now; more on that later.
+     $table->string('priority');
+     $table->boolean('complete');
+     $table->dateTime('completed_date')->nullable();
 
  });
     }

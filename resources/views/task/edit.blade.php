@@ -29,41 +29,40 @@
 
 
         <div class='form-group'>
-            <label>Date</label>
+            <label>Priority Level</label>
             <input
             type='text'
-            id='date'
-            name='date'
-            value='{{ old('date' , $task->date) }}'
+            id='priority'
+            name='priority'
+            value='{{ old('priority' , $task->priority) }}'
             >
-            <div class='error'>{{ $errors->first('date') }}</div>
+            <div class='error'>{{ $errors->first('priority') }}</div>
         </div>
 
-
         <div class='form-group'>
-            <label>priority</label>
-            <select name='priority_id'>
-                @foreach($prioritys_for_dropdown as $priority_id => $priority)
-                    <option
-                    {{ ($priority_id == $task->priority->id) ? 'SELECTED' : '' }}
-                    value='{{ $priority_id }}'
-                    >{{ $priority }}</option>
+            <label>Category</label>
+            <select name='group_id'>
+                @foreach($groups_for_dropdown as $group_id => $group)
+                <option
+                {{ ($group_id == $task->group->id) ? 'SELECTED' : '' }}
+                value='{{ $group_id }}'
+                >{{ $group }}</option>
                 @endforeach
             </select>
         </div>
 
         <div class='form-group'>
-            <label>Tags</label>
-            @foreach($tags_for_checkboxes as $tag_id => $tag_name)
-                <input
-                type='checkbox'
-                value='{{ $tag_id }}'
-                name='tags[]'
-                {{ (in_array($tag_name, $tags_for_this_task)) ? 'CHECKED' : '' }}
-                >
-                {{ $tag_name }} <br>
-            @endforeach
+            <label>Completed</label>
+             <input
+              type='checkbox'
+              id='complete'
+              name='complete'
+              {{ ($task->complete == 1) ? 'CHECKED' : '' }}
+              >
+            <div class='error'>{{ $errors->first('complete') }}</div>
         </div>
+
+
 
 
         <div class='form-instructions'>

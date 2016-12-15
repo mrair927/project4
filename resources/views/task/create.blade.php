@@ -14,7 +14,7 @@
         {{ csrf_field() }}
 
         <div class='form-group'>
-           <label>Title</label>
+           <label>Title (please name your task!)</label>
             <input
                 type='text'
                 id='title'
@@ -23,7 +23,36 @@
             >
            <div class='error'>{{ $errors->first('title') }}</div>
         </div>
+        <div class='form-group'>
+                  <label>Level of Urgency (1-5)</label>
+                  <input
+                      type='text'
+                      id='priority'
+                      name='priority'
+                      value='{{ old('priority', '1') }}'
+                  >
+                  <div class='error'>{{ $errors->first('priority') }}</div>
+       </div>
+       <div class='form-group'>
+           <label>Category</label>
+           <select name='group_id'>
+               @foreach($groups_for_dropdown as $group_id => $group)
+                   <option
+                   value='{{ $group_id }}'
+                   >{{ $group }}</option>
+               @endforeach
+           </select>
+       </div>
 
+       <div class='form-group'>
+           <label>Completed</label>
+            <input
+             type='checkbox'
+             id='complete'
+             name='complete'
+             >
+           <div class='error'>{{ $errors->first('complete') }}</div>
+       </div>
 
 
         <div class='form-instructions'>

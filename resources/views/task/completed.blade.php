@@ -11,8 +11,7 @@
 
 @section('content')
 
-    <h1>Here's a List of the Tasks You Need to Complete:</h1>
-    <h4>Mark Each Task Complete Under Edit!</h4>
+    <h1>Here's a List of the Tasks You Have Completed:</h1>
 
     @if(sizeof($tasks) == 0)
         You have not added any tasks, you can <a href='/tasks/create'>add a task now to get started</a>.
@@ -22,7 +21,7 @@
 
                 <section class='task'>
                     <a href='/tasks/{{ $task->id }}'><h2 class='truncate'>{{ $task->title }}</h2></a>
-
+                    <h3>Completed Date: {{$task->completed_date}}</h3>
 
 
                     <a class='button' href='/tasks/{{ $task->id }}/edit'><i class='fa fa-pencil'></i> Edit</a>
