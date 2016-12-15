@@ -49,15 +49,27 @@ body {
 }
 
 h1 {
-
+  font-style:
+  font-family: Avant Garde;
+  color: #06354f;
 }
 
-h2 {
 
+h2 {
+font-family: Avant Garde;
+
+color: #357191;
+}
+
+h3 {
+font-family: Avant Garde;
+
+color: #357191;
 }
 
 h4 {
-
+  font-family: Avant Garde;
+  color: #357191;
 }
 /* End Sticky Footer */
 

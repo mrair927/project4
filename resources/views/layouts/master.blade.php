@@ -3,7 +3,7 @@
 <head>
     <title>
         {{-- Yield the title if it exists, otherwise default to 'Foobooks' --}}
-        @yield('title','Foobooks')
+        @yield('title','My Great Task Manager')
     </title>
 
     <meta charset='utf-8'>
@@ -30,7 +30,7 @@
         <a href='/'>
             <img
             src='https://lh5.ggpht.com/BggKi4WCYbq-VuWBK4U96scwxa2rNTiAe1amDkYTJcMLaPPJ2PHhJItWwSGwVhbjMw1c=w300'
-            alt='Foobooks Logo'
+            alt='Clipboard'
             class='logo'>
         </a>
     </header>
@@ -38,12 +38,12 @@
     <nav>
         <ul>
             @if(Auth::check())
-                <li><a href='/tasks'>All The Tasks</a></li>
+                <li><a href='/tasks'>View All Tasks</a></li>
                 <li><a href='/tasks/create'>Add a Task</a></li>
                 <li><a href='/tasks/completed'>View Completed Tasks</a></li>
-                <li><a href='/logout'>Log out</a></li>
+                <li><a href='/logout'>Logout</a></li>
             @else
-                <li><a href='/login'>Log in</a></li>
+                <li><a href='/login'>Login</a></li>
                 <li><a href='/register'>Register</a></li>
             @endif
         </ul>
@@ -54,12 +54,6 @@
         {{-- Main page content will be yielded here --}}
         @yield('content')
     </section>
-
-    <footer>
-        &copy; {{ date('Y') }}
-    </footer>
-
-
 
 </body>
 </html>

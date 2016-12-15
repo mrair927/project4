@@ -44,17 +44,6 @@
            </select>
        </div>
 
-       <div class='form-group'>
-           <label>Completed</label>
-            <input
-             type='checkbox'
-             id='complete'
-             name='complete'
-             >
-           <div class='error'>{{ $errors->first('complete') }}</div>
-       </div>
-
-
         <div class='form-instructions'>
             All fields are required
         </div>

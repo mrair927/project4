@@ -24,7 +24,7 @@ public function index(Request $request)
         $tasks = task::where([
           ['user_id', '=', $user->id],
           ['complete', '=', '0'],
-          ])->orderBy('id','DESC')->get();
+          ])->orderBy('priority','DESC')->get();
     }
     else {
         $tasks = [];
