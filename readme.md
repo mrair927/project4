@@ -11,7 +11,10 @@ This project demonstrates the us of CRUD in the following ways:
 
 I did not use any outside packages, but I did rely heavily on the Foobooks example code.
 
-                                                                
+Here is my screencast demo: http://www.screencast.com/t/Z0sOFNXQX
+Live link:http://project4.meghanrair.me/
+
+
 
 
 
