@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Welcome to Foobooks
+    Welcome to My Great Task Manager
 @endsection
 
 @section('content')
