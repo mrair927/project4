@@ -7,6 +7,7 @@ use Validator;
 use Project4\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
+
 class RegisterController extends Controller
 {
     /*

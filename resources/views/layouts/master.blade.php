@@ -43,7 +43,6 @@
                 <li><a href='/tasks/completed'>View Completed Tasks</a></li>
                 <li><a href='/logout'>Log out</a></li>
             @else
-                <li><a href='/'>Home</a></li>
                 <li><a href='/login'>Log in</a></li>
                 <li><a href='/register'>Register</a></li>
             @endif
