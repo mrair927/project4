@@ -1,7 +1,7 @@
 <?php
 namespace Project4\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Http\Requests;
+use Project4\Http\Requests;
 
 
 class PageController extends Controller
