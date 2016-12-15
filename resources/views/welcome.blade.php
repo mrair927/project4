@@ -6,7 +6,7 @@
 
 @section('content')
     <p>
-        Welcome to My Great Task Manager!
-        To get started <a href='/login'>log in</a> or <a href='/register'>register</a>.
+        <h4>Welcome to My Great Task Manager!
+        To get started <a href='/login'>log in</a> or <a href='/register'>register</a>.<h4>
     </p>
 @endsection

@@ -1,3 +1,22 @@
+#My Great Task Manager
+
+This Is a very simple, but yet still "great" task manager. It allows user authentication so that each user has their own editable list of tasks.
+This project demonstrates the us of CRUD in the following ways:
+                                                              Create: "Add New Task", allows the user to create a task with a title, priority and category via a form.
+                                                              Read/Retrieve: "View all tasks" is a list of all the tasks the user entered into that database ordered by priority.
+                                                              Update: The "Edit Task" function allows the user to edit their task or mark it as "completed" which then moves it to the "Completed Tasks" list.
+                                                              Destroy: Under "Edit Task" the user can delete the task from their database.
+
+
+
+I did not use any outside packages, but I did rely heavily on the Foobooks example code.
+
+                                                                
+
+
+
+
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
