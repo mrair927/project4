@@ -47,7 +47,7 @@ class LoginController extends Controller
         $this->guard()->logout();
         $request->session()->flush();
         $request->session()->regenerate();
-        Session::flash('flash_message','You have been logged out.'); # <-- NEW
+
         return redirect('/tasks');
     }
 }
